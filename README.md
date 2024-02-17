@@ -38,7 +38,7 @@
 |     | Baidu Netdisk | Google Drive | Number | Description|
 | :--- | :--: | :----: | :---- | ---- |
 | FlareReal600(train) | [link](https://pan.baidu.com/s/1-HyzbaknaTC5y2NXVK1uFw?pwd=mipi) | [link](https://drive.google.com/drive/folders/1LLLYEM0RhQMWIj0lTl_rK3jzZJWJrd5m?usp=sharing) | 600 | FlareReal600 training dataset contains 600 real aligned training images in 2k resolution. |
-| FlareReal600(val)| [link](https://pan.baidu.com/s/1L8hc_H_kNrNOX4ArL-DEtA?pwd=mipi) | [link](https://drive.google.com/drive/folders/1NcyicOR1LuGd4HygelLcxC2e0Y_-_L9q?usp=sharing) | 50 | FlareReal600 validation dataset contains 50 real aligned training images in 2k resolution.|
+| FlareReal600(val)| [link](https://pan.baidu.com/s/1GA5cJVVJeF6hOqSegNuMxQ?pwd=mipi) | [link](https://drive.google.com/file/d/1xTh7whQ8Cxqps91ZN6_jdiT28TmG8IIr/view?usp=sharing) | 50 | FlareReal600 validation dataset contains 50 real aligned training images in 2k resolution.|
 
 ### Inference Code
 To estimate the flare-free images with trained model, you can run the `test.py` by using:
