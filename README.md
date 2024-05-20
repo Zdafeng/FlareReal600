@@ -11,6 +11,7 @@
 ### Update
 
 - **2024.05.20**: We released our FlareReal600 dataset (4k resolution) and 500 real-captured flare patterns.
+- **2024.01.19**: We are holding the [MIPI 2024 flare removal challenge (CVPR2024)](https://mipi-challenge.org/MIPI2024/).
 - **2024.01.15**: We released the training codes and our FlareReal600 dataset (2k resolution).
 
 ### Installation
