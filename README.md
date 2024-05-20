@@ -6,10 +6,11 @@
 
 
 ### FlareReal600
-**FlareReal600**, the first real paired nighttime flare removal dataset, consists of 600 real-paired flare images with 2k resolution.
+**FlareReal600**, the first real paired nighttime flare removal dataset, consists of 600 real-paired flare images with 2k/4k resolution.
 
 ### Update
 
+- **2024.05.20**: We released our FlareReal600 dataset (4k resolution) and 500 real-captured flare patterns.
 - **2024.01.15**: We released the training codes and our FlareReal600 dataset (2k resolution).
 
 ### Installation
