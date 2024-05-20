@@ -1,4 +1,4 @@
-# FlareReal600: A Real Paired Nighttime Flare Removal Dataset
+# FlareReal600: Real-Captured Paired Dataset for Nighttime Flare Removal
 
 [Project Page](https://pan.baidu.com/s/1GA5cJVVJeF6hOqSegNuMxQ?pwd=mipi)
 
