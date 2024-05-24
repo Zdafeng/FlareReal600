@@ -1,0 +1,128 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "FlareReal600",
+  "description": "the first real paired nighttime flare removal dataset, consists of 600 real-paired flare images with 2k resolution.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "url": "https://github.com/Zdafeng/FlareReal600",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "github-repository",
+      "name": "github-repository",
+      "description": "FlareReal600",
+      "contentUrl": "https://github.com/Zdafeng/FlareReal600",
+      "encodingFormat": "git+https",
+      "sha256": "main"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "jsonl-files",
+      "name": "jsonl-files",
+      "description": "JSONL files are hosted on the GitHub repository.",
+      "containedIn": {
+        "@id": "github-repository"
+      },
+      "encodingFormat": "application/jsonlines",
+      "includes": "meta/*.jsonl"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "jsonl",
+      "name": "jsonl",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "jsonl/flare_corrupted_image",
+          "name": "flare_corrupted_image",
+          "description": "Flare corrupted images",
+          "dataType": "sc:ImageObject",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "column": "flare_corrupted_image"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "jsonl/flare_free_image",
+          "name": "flare_free_image",
+          "description": "GT (Flare-free image)",
+          "dataType": "sc:ImageObject",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "column": "flare_free_image"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "jsonl/flare_image",
+          "name": "flare_image",
+          "description": "Flare image",
+          "dataType": "sc:ImageObject",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "column": "flare_free_image"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
